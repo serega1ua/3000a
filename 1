@@ -1,4 +1,3 @@
 const insertMissingLetters = s => [...s]
             .map((c,i)=>s.slice(0,i).includes(c)?c:c+[...'abcdefghijklmnopqrstuvwxyz']
-            .filter(e=>e>c&&!s.includes(e)).join``.toUpperCase())
-            .join``
+            .filter(e=>e>c&&!s.includes(e)).join``
